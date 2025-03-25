@@ -1,14 +1,8 @@
-{
-  "name": "human-evolution-site",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
-  }
+export default function TimeMachine() {
+  return (
+    <div>
+      <h1>Welcome to the Time Machine</h1>
+      <p>Step into the past and explore history!</p>
+    </div>
+  );
 }
