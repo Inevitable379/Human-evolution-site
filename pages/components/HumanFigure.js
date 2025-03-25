@@ -1,8 +1,8 @@
-export default function TimeMachine() {
-  return (
-    <div>
-      <h1>Welcome to the Time Machine</h1>
-      <p>Step into the past and explore history!</p>
-    </div>
-  );
+export default function HumanFigure() {
+    return (
+        <div>
+            <h1>Human Figure</h1>
+            <p>This is a human figure component.</p>
+        </div>
+    );
 }
