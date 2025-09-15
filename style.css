@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#content-container {
+    padding: 20px;
+}
+
+#content-container h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#content-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Styling for individual content sections */
+#early-hominids,
+#bipedalism,
+#tool-use,
+#control-of-fire,
+#emergence-of-language,
+#agriculture-settlements,
+#rise-of-civilizations,
+#sci-tech-revolutions,
+#information-age-ai {
+    /* Specific ID styles can remain if needed, or be merged into .content-section */
+}
+
+.content-section {
+    border: 1px solid #ccc;
+    background-color: #fff; /* Slightly different from body's #f4f4f4 */
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    margin-bottom: 20px; /* Added margin here as well */
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
