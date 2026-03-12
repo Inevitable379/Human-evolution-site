@@ -77,7 +77,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="hero" className={styles.hero} aria-label="Introduction">
+    <section id="hero" ref={heroRef} className={styles.hero} aria-label="Introduction">
       <div className={styles.background}>
         <canvas
           ref={canvasRef}
@@ -85,7 +85,7 @@ export default function Hero() {
           aria-hidden="true"
         />
       </div>
-      <div ref={heroRef} className={styles.content}>
+      <div className={styles.content}>
         <span className={styles.subtitle}>The Story of Us</span>
         <h1 className={styles.title}>
           <span className={styles.titleLine}>What Makes Us</span>
@@ -96,10 +96,10 @@ export default function Hero() {
           remarkable adaptations that set our species apart — from walking
           upright to building civilizations.
         </p>
-        <div className={styles.scrollIndicator} aria-hidden="true">
-          <span>Scroll to explore</span>
-          <div className={styles.scrollLine} />
-        </div>
+      </div>
+      <div className={styles.scrollIndicator} aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div className={styles.scrollLine} />
       </div>
     </section>
   );

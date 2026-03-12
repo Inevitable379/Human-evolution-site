@@ -50,7 +50,8 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 │   ├── MilestoneSection.js # Individual milestone sections
 │   ├── DataViz.js         # Mini data visualizations
 │   ├── MorphingSVG.js     # Morphing SVG illustrations
-│   └── Navigation.js      # Sticky navigation
+│   ├── Navigation.js      # Sticky navigation
+│   └── Footer.js          # Site footer
 ├── styles/
 │   ├── globals.css        # Global styles and CSS variables
 │   └── components/        # Component-specific CSS modules
