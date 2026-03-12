@@ -37,22 +37,8 @@ export default function MorphingSVG({ stage = 'bipedalism' }) {
   useEffect(() => {
     if (!pathRef.current) return;
 
-    const prefersReducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches;
-
-    if (prefersReducedMotion) {
-      pathRef.current.setAttribute('d', shape.body);
-      pathRef.current.setAttribute('fill', shape.color);
-      return;
-    }
-
-    // Use Web Animations API for smooth morph
-    pathRef.current.style.transition = 'fill 0.8s ease';
+    pathRef.current.setAttribute('d', shape.body);
     pathRef.current.setAttribute('fill', shape.color);
-
-    // For path morphing, use CSS transition on d attribute
-    pathRef.current.style.d = `path("${shape.body}")`;
   }, [stage, shape]);
 
   return (

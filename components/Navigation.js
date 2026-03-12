@@ -60,7 +60,7 @@ export default function Navigation() {
                 activeSection === section.id ? styles.linkActive : ''
               }`}
               onClick={() => scrollToSection(section.id)}
-              aria-current={activeSection === section.id ? 'true' : undefined}
+              aria-current={activeSection === section.id ? 'page' : undefined}
             >
               {section.label}
             </button>
