@@ -14,7 +14,7 @@ This site explores what differentiates humans from other animals through a narra
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 with React 18
+- **Framework**: Next.js 15 with React 19
 - **Animations**: IntersectionObserver, requestAnimationFrame, and CSS transitions
 - **Styling**: CSS Modules with custom properties
 - **Approach**: Mobile-first responsive design
