@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  overflow: visible;
+}
+
+.morphPath {
+  transition: d 0.8s var(--ease-out-expo), fill 0.8s var(--ease-out-expo);
+  will-change: d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .morphPath {
+    transition: none;
+  }
+}

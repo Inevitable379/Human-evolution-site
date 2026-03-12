@@ -1,0 +1,40 @@
+.footer {
+  padding: var(--space-xl) var(--space-md);
+  background: var(--color-bg-section);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.description {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0 auto var(--space-md);
+  line-height: 1.7;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-lg) auto;
+}
+
+.credit {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
