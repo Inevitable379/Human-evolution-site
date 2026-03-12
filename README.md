@@ -29,14 +29,52 @@ This site explores what differentiates humans from other animals through a narra
 - Accessibility: reduced-motion support, ARIA roles, keyboard navigation
 - Performance optimized: lazy loading, requestAnimationFrame, will-change hints
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) version 18.18 or later
+- npm (included with Node.js)
+
 ## Getting Started
 
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Inevitable379/Human-evolution-site.git
+   cd Human-evolution-site
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
+
+### Production Build
+
+To create and serve an optimized production build:
+
 ```bash
-npm install
-npm run dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+The production server starts on [http://localhost:3000](http://localhost:3000) by default.
+
+### Available Scripts
+
+| Command         | Description                        |
+| --------------- | ---------------------------------- |
+| `npm run dev`   | Start the development server       |
+| `npm run build` | Create an optimized production build |
+| `npm start`     | Serve the production build         |
 
 ## Project Structure
 
