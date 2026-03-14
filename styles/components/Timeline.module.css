@@ -1,0 +1,147 @@
+.timeline {
+  position: relative;
+  padding: var(--space-2xl) var(--space-md);
+  background: var(--color-bg-section);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  opacity: 0;
+}
+
+.headingLabel {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.track {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+  transform: translateX(-50%);
+}
+
+.lineProgress {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 0%;
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-highlight));
+  transform: translateX(-50%);
+  transition: height 0.1s linear;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-xl);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.itemLeft {
+  justify-content: flex-end;
+  padding-right: calc(50% + var(--space-lg));
+  text-align: right;
+}
+
+.itemRight {
+  justify-content: flex-start;
+  padding-left: calc(50% + var(--space-lg));
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  top: var(--space-sm);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  transform: translateX(-50%);
+  transition: border-color var(--transition-normal), background var(--transition-normal),
+    box-shadow var(--transition-normal);
+  z-index: 1;
+}
+
+.dotActive {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  box-shadow: 0 0 20px rgba(244, 162, 97, 0.4);
+}
+
+.card {
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-normal), transform var(--transition-normal);
+  max-width: 320px;
+  cursor: default;
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.cardYear {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.cardDescription {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .line,
+  .lineProgress {
+    left: var(--space-md);
+  }
+
+  .dot {
+    left: var(--space-md);
+  }
+
+  .itemLeft,
+  .itemRight {
+    padding-left: calc(var(--space-md) + var(--space-lg));
+    padding-right: 0;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
