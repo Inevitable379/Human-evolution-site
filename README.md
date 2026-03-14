@@ -76,6 +76,30 @@ The production server starts on [http://localhost:3000](http://localhost:3000) b
 | `npm run build` | Create an optimized production build |
 | `npm start`     | Serve the production build         |
 
+## Opening in VS Code
+
+You can clone and run this project entirely from [Visual Studio Code](https://code.visualstudio.com/):
+
+1. Open VS Code and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> (or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> on macOS) to open the **integrated terminal** — this is where you run all the `bash` commands listed above.
+
+2. In the terminal, clone the repo and open it:
+
+   ```bash
+   git clone https://github.com/Inevitable379/Human-evolution-site.git
+   code Human-evolution-site
+   ```
+
+3. Once the folder opens in VS Code, open a new terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>) and run:
+
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
+
+> **Tip:** You can also use **File → Open Folder** to open a previously cloned copy of this repository.
+
 ## Project Structure
 
 ```
