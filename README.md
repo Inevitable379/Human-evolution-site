@@ -1,5 +1,7 @@
 # Human Evolution Site
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Inevitable379/Human-evolution-site)
+
 A visually rich, fluid, and highly animated webpage about human evolution, inspired by Neal.fun.
 
 ## Concept
@@ -78,9 +80,19 @@ The production server starts on [http://localhost:3000](http://localhost:3000) b
 
 ## Opening in VS Code
 
-You can clone and run this project entirely from [Visual Studio Code](https://code.visualstudio.com/):
+### One-Click: GitHub Codespaces (no install needed)
 
-1. Open VS Code and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> (or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> on macOS) to open the **integrated terminal** — this is where you run all the `bash` commands listed above.
+The fastest way to start coding — click the button below to open a full VS Code editor in your browser with everything pre-configured:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Inevitable379/Human-evolution-site)
+
+Codespaces automatically installs dependencies and forwards port 3000 so you can preview the site instantly.
+
+### Local Setup
+
+To run the project on your own machine with [Visual Studio Code](https://code.visualstudio.com/):
+
+1. Open VS Code and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> (or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> on macOS) to open the **integrated terminal**.
 
 2. In the terminal, clone the repo and open it:
 
@@ -98,7 +110,7 @@ You can clone and run this project entirely from [Visual Studio Code](https://co
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
-> **Tip:** You can also use **File → Open Folder** to open a previously cloned copy of this repository.
+> **Tip:** You can also use **File → Open Folder** to open a previously cloned copy of this repository. When VS Code prompts you to install recommended extensions, click **Install All** for the best editing experience.
 
 ## Project Structure
 
